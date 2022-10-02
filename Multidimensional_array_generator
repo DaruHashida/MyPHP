@@ -5,7 +5,7 @@
 // $min, $max - range, from which random numeric elements of the last dimension's arrays are chosen
 // $numel - number of numeric elements at each last dimension's arrays are chosen
 // $numlev - number of dimensions ("levels") of the final multidimensional array
-// Have fun, watch Anime. El, Psy, Kongruu!
+// El, Psy, Kongruu!
 
 <?php
 function genarr ($numar,$min,$max,$numel,$numlev) {
