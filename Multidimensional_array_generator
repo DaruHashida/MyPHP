@@ -1,0 +1,27 @@
+// This function an array with a given number of dimensions, filled with numeric elements chosen randomly from a given range.
+// The number of arrays in one dimension is the same everywhere, can be set by the user.
+// Function parameters:
+// $numar - number of arrays in each dimension (everywhere equal)
+// $min, $max - range, from which random numeric elements of the last dimension's arrays are chosen
+// $numel - number of numeric elements at each last dimension's arrays are chosen
+// $numlev - number of dimensions ("levels") of the of the final multidimensional array
+// Have fun, watch Anime. El, Psy, Kongruu!
+
+function genarr ($numar,$min,$max,$numel,$numlev) {
+if ($numlev != 1)
+{
+for ($i=0; $i < $numar; $i++) {
+$arr[] = genarr($numar,$min,$max,$numel,$numlev-1);
+}
+return $arr;
+} 	
+else
+{ for ($i=0; $i < $numar; $i++) {
+			for ($j = 0; $j < $numel; $j++)
+			{$ar[$j] = mt_rand($min,$max);}
+		$arra[] = $ar;
+		}
+	return $arra;
+	}
+};
+$gen_arr = genarr (4,4,18,6,3);
