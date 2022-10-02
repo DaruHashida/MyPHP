@@ -4,7 +4,7 @@
 // $numar - number of arrays in each dimension (everywhere equal)
 // $min, $max - range, from which random numeric elements of the last dimension's arrays are chosen
 // $numel - number of numeric elements at each last dimension's arrays are chosen
-// $numlev - number of dimensions ("levels") of the of the final multidimensional array
+// $numlev - number of dimensions ("levels") of the final multidimensional array
 // Have fun, watch Anime. El, Psy, Kongruu!
 
 <?php
@@ -25,5 +25,4 @@ else
 	return $arra;
 	}
 };
-$gen_arr = genarr (4,4,18,6,3);
 ?>
