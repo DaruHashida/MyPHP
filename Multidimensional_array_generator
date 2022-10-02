@@ -7,6 +7,7 @@
 // $numlev - number of dimensions ("levels") of the of the final multidimensional array
 // Have fun, watch Anime. El, Psy, Kongruu!
 
+<?php
 function genarr ($numar,$min,$max,$numel,$numlev) {
 if ($numlev != 1)
 {
@@ -25,3 +26,4 @@ else
 	}
 };
 $gen_arr = genarr (4,4,18,6,3);
+?>
